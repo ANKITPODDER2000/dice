@@ -1,77 +1,31 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 div.dice-block i{
     font-size: 180px;
     color : purple;
 }
 div.dice-block i.roling{
-    -webkit-animation-name: roll;
-            animation-name: roll;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-}
-@-webkit-keyframes roll{
-    from{
-        -webkit-transform: translate3d(0,0);
-                transform: translate3d(0,0);
-    }
-    15%{
-        -webkit-transform: translate3d(-25% , 0 ,0) rotate3d(0,0,1,-5deg);
-                transform: translate3d(-25% , 0 ,0) rotate3d(0,0,1,-5deg);
-    }
-    30%{
-        -webkit-transform: translate3d(20% , 0 ,0) rotate3d(0,0,1,3deg);
-                transform: translate3d(20% , 0 ,0) rotate3d(0,0,1,3deg);
-    }
-    45%{
-        -webkit-transform: translate3d(-15% , 0 ,0) rotate3d(0,0,1,-3deg);
-                transform: translate3d(-15% , 0 ,0) rotate3d(0,0,1,-3deg);
-    }
-    60%{
-        -webkit-transform: translate3d(10% , 0 ,0) rotate3d(0,0,1,2deg);
-                transform: translate3d(10% , 0 ,0) rotate3d(0,0,1,2deg);
-    }
-    75%{
-        -webkit-transform: translate3d(-5% , 0 ,0) rotate3d(0,0,1,-1deg);
-                transform: translate3d(-5% , 0 ,0) rotate3d(0,0,1,-1deg);
-    }
-    to{
-        -webkit-transform: translate3d(0,0);
-                transform: translate3d(0,0);
-    }
+    animation-name: roll;
+    animation-duration: 1s;
 }
 @keyframes roll{
     from{
-        -webkit-transform: translate3d(0,0);
-                transform: translate3d(0,0);
+        transform: translate3d(0,0,0);
     }
     15%{
-        -webkit-transform: translate3d(-25% , 0 ,0) rotate3d(0,0,1,-5deg);
-                transform: translate3d(-25% , 0 ,0) rotate3d(0,0,1,-5deg);
+        transform: translate3d(-25% , 0 ,0) rotate3d(0,0,1,-5deg);
     }
     30%{
-        -webkit-transform: translate3d(20% , 0 ,0) rotate3d(0,0,1,3deg);
-                transform: translate3d(20% , 0 ,0) rotate3d(0,0,1,3deg);
+        transform: translate3d(20% , 0 ,0) rotate3d(0,0,1,3deg);
     }
     45%{
-        -webkit-transform: translate3d(-15% , 0 ,0) rotate3d(0,0,1,-3deg);
-                transform: translate3d(-15% , 0 ,0) rotate3d(0,0,1,-3deg);
+        transform: translate3d(-15% , 0 ,0) rotate3d(0,0,1,-3deg);
     }
     60%{
-        -webkit-transform: translate3d(10% , 0 ,0) rotate3d(0,0,1,2deg);
-                transform: translate3d(10% , 0 ,0) rotate3d(0,0,1,2deg);
+        transform: translate3d(10% , 0 ,0) rotate3d(0,0,1,2deg);
     }
     75%{
-        -webkit-transform: translate3d(-5% , 0 ,0) rotate3d(0,0,1,-1deg);
-                transform: translate3d(-5% , 0 ,0) rotate3d(0,0,1,-1deg);
+        transform: translate3d(-5% , 0 ,0) rotate3d(0,0,1,-1deg);
     }
     to{
-        -webkit-transform: translate3d(0,0);
-                transform: translate3d(0,0);
+        transform: translate3d(0,0,0);
     }
 }
