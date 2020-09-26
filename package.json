@@ -1,6 +1,6 @@
 {
   "homepage": "http://ANKITPODDER2000.github.io/dicerotate",
-  "name": "basic1",
+  "name": "dice",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
